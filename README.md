@@ -1,2 +1,2 @@
 # homepage
-my homepage
+This is my new awesome homepage
