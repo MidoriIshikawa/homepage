@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+    cursor: none; /* デフォルトのカーソルを非表示 */
 }
 
 .container {
@@ -91,19 +92,19 @@ h2 {
 
 .floating-element {
     position: fixed;
-    background: #ff6b6b;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+    font-size: 2rem;
     z-index: 1000;
-    transition: transform 0.1s ease-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     user-select: none;
+    pointer-events: none;
 }
 
-.floating-element:hover {
-    background: #ff5252;
+.cat-cursor {
+    position: fixed;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 1001;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
 }
 
 @media (max-width: 768px) {
